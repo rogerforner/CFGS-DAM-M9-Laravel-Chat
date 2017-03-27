@@ -6,7 +6,10 @@ var Redis = require('ioredis');
 var redis = new Redis();
 
 redis.psubscribe('*', function(err, count) {
-    console.log('Errors subscribing to channel');
+    console.log('Subscribing to channels: number of channels ' + count);
+    if(err){
+        console.log('Error subscribing to channel ' + err)
+    }
 });
 
 redis.on('pmessage', function(subscribed,channel, message) {
@@ -15,9 +18,6 @@ redis.on('pmessage', function(subscribed,channel, message) {
     io.emit(channel + ':' + message.event, message.data);
 });
 
-
-http.listen(3000,function () {
-
-    console.log("listening at port 3000");
-
+http.listen(3000, function(){
+    console.log('Listening at port 3000')
 });
