@@ -178,6 +178,8 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
         #llum_providers
 
         /*
@@ -253,6 +255,7 @@ return [
         'Menu' => Spatie\Menu\Laravel\MenuFacade::class,
         'Link' => Spatie\Menu\Laravel\Link::class,
         'Html' => Spatie\Menu\Laravel\Html::class,
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
