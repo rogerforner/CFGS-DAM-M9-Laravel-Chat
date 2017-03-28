@@ -1,6 +1,6 @@
 /**
  * Romanian translation for bootstrap-datepicker
- * Roger Forne(r) Vasile <cristi.mie@gmail.com>
+ * Cristian Vasile <cristi.mie@gmail.com>
  */
 ;(function($){
 	$.fn.datepicker.dates['ro'] = {
