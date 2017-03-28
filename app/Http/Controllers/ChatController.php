@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Roger\Http\Controllers;
 
-use App\Events\MessageSent;
-use App\Message;
+use Roger\Events\MessageSent;
+use Roger\Message;
 use Auth;
 use Illuminate\Http\Request;
 
 /**
  * Class ChatController.
  *
- * @package App\Http\Controllers
+ * @package Roger\Http\Controllers
  */
 class ChatController extends Controller
 {

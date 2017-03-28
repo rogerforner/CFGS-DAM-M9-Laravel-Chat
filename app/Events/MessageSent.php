@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Events;
+namespace Roger\Events;
 
-use App\Message;
-use App\User;
+use Roger\Message;
+use Roger\User;
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Broadcasting\PrivateChannel;
@@ -15,7 +15,7 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 /**
  * Class MessageSent.
  *
- * @package App\Events
+ * @package Roger\Events
  */
 class MessageSent implements ShouldBroadcast
 {

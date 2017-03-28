@@ -174,6 +174,8 @@ return [
         Spatie\Menu\Laravel\MenuServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
         #llum_providers
 
         /*
@@ -184,11 +186,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Roger\Providers\AppServiceProvider::class,
+        Roger\Providers\AuthServiceProvider::class,
+        // Roger\Providers\BroadcastServiceProvider::class,
+        Roger\Providers\EventServiceProvider::class,
+        Roger\Providers\RouteServiceProvider::class,
 
     ],
 
@@ -249,6 +251,7 @@ return [
         'Menu' => Spatie\Menu\Laravel\MenuFacade::class,
         'Link' => Spatie\Menu\Laravel\Link::class,
         'Html' => Spatie\Menu\Laravel\Html::class,
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
         #llum_aliases
 
