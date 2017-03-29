@@ -4,7 +4,6 @@
 	Change Title here!
 @endsection
 
-a
 @section('main-content')
 	<div class="container-fluid spark-screen">
 		<div class="row">
@@ -15,7 +14,7 @@ a
 						<h3 class="box-title">Chat</h3>
 
 						<div class="box-tools pull-right">
-							<span data-toggle="tooltip" title="3 New Messages" class="badge bg-light-blue">3</span>
+							<span data-toggle="tooltip" title="5 New Messages" class="badge bg-light-blue">5</span>
 							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
 							</button>
 							<button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle">
